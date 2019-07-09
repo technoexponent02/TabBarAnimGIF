@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:id="@+id/root">
+
+
+    <com.example.tabbaranimgif.animation.FloatingActionMenu
+        android:id="@+id/floatingMenu"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="70dp"
+        app:radius="70dp"
+        app:shadowWidth="2dp"
+        app:scaleRatio="5"
+        app:duration="200"
+        app:bgColor="#4ad6bd"
+        app:menuIconRotateAngle="225"
+        app:menuIconWidth="20dp"
+        app:menuIconHeight="20dp"
+        app:menuIcon="@drawable/default_menu_icon"
+        app:firstActionIcon="@drawable/browse_icon"
+        app:secondActionIcon="@drawable/profile_icon"
+        app:thirdActionIcon="@drawable/message_icon"
+        app:fourthActionIcon="@drawable/setting_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+    </com.example.tabbaranimgif.animation.FloatingActionMenu>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/floatingMenu"/>
+
+
+</RelativeLayout>

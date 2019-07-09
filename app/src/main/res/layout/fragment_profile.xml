@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/parentlayout">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_above="@+id/txtName"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jessica Miles"
+            android:textColor="#688ec2"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:padding="22dp"
+            android:layout_above="@+id/txtAddress"/>
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="USA"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_above="@+id/txtDescription"/>
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dummyText"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"/>
+
+    </RelativeLayout>
+</LinearLayout>
